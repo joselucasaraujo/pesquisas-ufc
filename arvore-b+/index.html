@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="José Lucas Araújo de Lima">
+	<title>Árvore B+</title>
+	<script src="index.js"></script>
+	<link rel="shortcut icon" href="./assets/arvore.ico">
+	<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+</head>
+
+<body onload="document.acaoForm.num.focus()">
+	<div class="content">
+		<div class="formbox">
+			<h1>Ações</h1>
+			<form name="acaoForm" id="acaoForm">
+				<div class="formline">
+					<label id="label" for="num">Valor:</label>
+					<input name="num" id="num" size="5" maxlength="8" type="number">					
+				</div>
+				<div class="buttons">
+					<input id="btn" class="btn" value="Construir nova árvore" onclick="rodarAcao('gerarNova', document.acaoForm.num.value)" type="button">					
+					<input id="btn" class="btn" value="Inserir" onclick="rodarAcao('adicionar', document.acaoForm.num.value)" type="button">					
+					<input id="btn" class="btn" value="Deletar" onclick="rodarAcao('deletar', document.acaoForm.num.value)" type="button">
+					<input id="btn" class="btn" value="Procurar" onclick="rodarAcao('procurar', document.acaoForm.num.value)" type="button">
+					<input id="btn" class="btn" value="Criar chaves aleatórios" onclick="rodarAcao('gerarChaveAleatoria', document.acaoForm.num.value)" type="button">
+					<input id="btn" class="btn" value="Add chaves aleatórias" onclick="rodarAcao('adicionarChavesAleatorias', document.acaoForm.num.value)" type="button">
+					<input id="botaoHistorico" type="button" class="btn" onclick="rodarAcao('historico')" value="Histórico" /> 
+					<input id="botaoReorganizar" type="button" class="btn" onclick="rodarAcao('reorganizar')" value="Reorganizar" /> 
+				</div>
+				<div class="formline">
+					<p id="valoresAleatorios"></p>					
+				</div>
+			</form>
+		</div>
+		<div class="showBox">
+			<h2>Resultado</h2>
+			<div id="msg"></div>
+			<canvas id="canvas" width="1" height="1"></canvas>
+		</div>
+	</div>
+</body>
+​​​​​</html>

@@ -1,0 +1,125 @@
+BODY 
+{	
+	overflow-y: scroll; 
+	background-color: #f5f5f5;
+}
+* 
+{	
+	margin: 0; 
+	padding: 0;
+}
+label
+{
+	font-weight: bold;
+}
+.content 
+{
+	padding: 15px 15px 15px 15px;
+	display: inline-flex;
+}
+.buttons
+{
+	padding: 15px 10px 10px 15px;
+	text-align: center;
+	display: grid;
+}
+.formbox 
+{
+	overflow-y: scroll;
+	padding: 15px 15px 15px 15px;
+	width: 20vw;
+	height: 80vh;
+	border: 1px solid #2d3028;
+	background-color: #FFFFFF;
+	border-radius: 25px;
+	box-shadow: 2px 2px 2px #666;
+}
+.showBox 
+{
+	margin-left: 1rem;
+	padding: 15px 15px 15px 15px;
+	color: #000000;
+	background-color: #FFFFFF;
+	border: 1px solid black;
+	box-shadow: 2px 2px 2px #666;
+	border-radius: 20px;
+	overflow-x: auto;
+	width: 70vw;
+	
+}
+.formline 
+{
+	font-size: 12pt;
+	padding: 5px 5px 5px 5px;
+}
+form input 
+{
+	padding: 3px 3px 3px 3px; 
+	border: 1px solid #c0c0c0;
+	border-radius: 7px;
+	font-family: arial, sans-serif;
+	font-size: 10pt;
+	outline: none;
+}
+.btn 
+{	
+	height: 5.5vh;
+	color:#0000A0;
+	background-color: transparent;
+	border-radius: 4px 4px 4px 4px;
+	border: 1px solid;
+	font-family: arial, sans-serif;
+	font-size: 11pt;
+	font-weight: bold;
+	padding: 2px 3px 2px 3px;
+	cursor: pointer;
+	width: 100%;
+	margin: 0 0 0.5rem 0;
+	word-wrap: break-word;
+}
+.btn:hover 
+{
+	color:#001800;
+	background:#47c9b3;
+}
+.btn:active 
+{
+	color:#180000;
+	background:#696868;
+}
+table 
+{	
+	font-family: arial;
+	font-size: 12pt;
+	border: none;
+}
+.trLvl 
+{
+	padding: 2px;
+}
+table.trNode TD 
+{
+	border: none;
+	background-color: #D2B48C;
+	padding: 2px 2px 2px 2px;
+}
+table.trLeaf TD 
+{
+	border: none;
+	background-color: #90EE90;
+	padding: 2px 2px 2px 2px;
+}
+table.trLeaf TD.here 
+{
+	border: none;
+	background-color: #FFAAAA;
+}
+#num
+{
+    width: 8vw;
+	margin: 0.5rem auto;
+}
+#valoresAleatorios 
+{
+	word-wrap: break-word;
+}
